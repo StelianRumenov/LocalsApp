@@ -27,10 +27,10 @@ module.exports = {
   rules: {
     // semi: ['error', 'never'],
     // 'comma-dangle': [2, 'never'],
-    'react/jsx-filename-extension': [1, {extensions: ['.js', '.jsx']}],
-    'no-use-before-define': [
-      'error',
-      {functions: true, classes: true, variables: false},
-    ],
+    'react/jsx-filename-extension': [1, {extensions: ['.js', '.jsx', '.tsx']}],
+    // 'no-use-before-define': [
+    //   'error',
+    //   {functions: false, classes: false, variables: false},
+    // ],
   },
 };
