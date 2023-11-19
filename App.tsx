@@ -1,26 +1,19 @@
 import React from 'react';
-import TestComponent from './components/test';
-import {SafeAreaView, ScrollView, Text, View, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+import CurrentWeather from './components/CurrentWeather';
+import UpcomingWeather from './components/UpcomingWeather';
 
-import {} from 'react-native/Libraries/NewAppScreen';
-
-function App(): JSX.Element {
+function App() {
   return (
-    <SafeAreaView style={styles.wrapper}>
-      <View style={styles.container}>
-        <Text>
-          <TestComponent />
-        </Text>
-      </View>
-    </SafeAreaView>
+    <View style={styles.container}>
+      {/* <CurrentWeather /> */}
+      <UpcomingWeather />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'pink',
-  },
-  wrapper: {
     flex: 1,
   },
 });
